@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertex Events — Vertex Institute of Technology</title>
+<meta name="description" content="Find, register for, and relive every fest, talk, hackathon and workshop at Vertex Institute of Technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow mono">vertex institute of technology &mdash; student events office</span>
+      <h1>Every fest, talk, and<br>hackathon, <em>in one place.</em></h1>
+      <p class="lead">Vertex Events is the campus system for finding what's on, registering in under a minute, and looking back at what happened. No spreadsheets, no group-chat screenshots.</p>
+      <div class="hero-actions">
+        <a href="events.html" class="btn btn-primary">browse events</a>
+        <a href="register.html" class="btn btn-on-dark">register for an event</a>
+      </div>
+      <div class="status-bar mono">
+        <span>events_open: <b id="statusCount">8</b></span>
+        <span>next_up: <b id="statusNext">loading&hellip;</b></span>
+        <span>status: <b>registrations live</b></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED EVENTS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">// featured</span>
+          <h2>Upcoming on campus</h2>
+          <p>The five soonest events across every department and club. Full listing with filters lives on the Events page.</p>
+        </div>
+        <a href="events.html" class="btn btn-ghost">view all events</a>
+      </div>
+      <div class="featured-list" id="featuredList">
+        <!-- populated by js/home.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE EVENT SYSTEM -->
+  <section class="dark-section">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow reveal">// about vertex events</span>
+        <h2 class="reveal">Built by the events office, for everyone on campus</h2>
+        <p class="reveal">Every club and department used to run registrations through a different form, spreadsheet, or sign-up sheet pinned to a noticeboard. Vertex Events replaces all of that with one system: one place to publish an event, one place to register, one record of who showed up.</p>
+        <div class="stat-row reveal">
+          <div class="stat"><b>8</b><span>events this term</span></div>
+          <div class="stat"><b>24</b><span>clubs &amp; departments</span></div>
+          <div class="stat"><b>3.1k</b><span>registrations logged</span></div>
+          <div class="stat"><b>&lt;1min</b><span>average sign-up time</span></div>
+        </div>
+      </div>
+      <div class="value-grid">
+        <div class="value-card reveal">
+          <span class="idx mono">01</span>
+          <h4>Find what's on</h4>
+          <p>Every event in one filterable list — date, time, venue, and seats remaining, updated in real time.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="idx mono">02</span>
+          <h4>Register in seconds</h4>
+          <p>One short form per event. Instant confirmation with a reference code, no email chains required.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="idx mono">03</span>
+          <h4>Relive it after</h4>
+          <p>Photos from every event land in the gallery within a week, tagged so you can find your own club's shots.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="idx mono">04</span>
+          <h4>Reach the right people</h4>
+          <p>Organizers see live sign-up counts and department breakdowns, so promotion goes where it's needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/events-data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
